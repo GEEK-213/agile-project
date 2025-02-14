@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #00093c;
+}
+.linknavbar{
+    width: 100%;
+    height: 25px;
+    background-color: #000522;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; 
+    padding-right: 100px;
+
+}
+.sociallinks{
+    height: 20px;
+    width: 24px;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    background-color: #00093c;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    height: 150px;
+    width: 200px;
+}
+
+.dropdownitems{
+    display: inline-block;
+}
+.navbar .dropdownitems{
+    padding-left: 30px;
+}
+.dropdownitems button{
+    background-color:  #00093c;
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    padding: 10px 7px;
+    border-radius: 10px;
+    border: none;
+}
+.dropdownitems a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+}
+.dropdownitems .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(237, 66%, 24%);
+    min-width: 200px;
+    text-align: center;
+}
+.dropdownitems:hover .content{
+    display: block;
+}
+
+.dropdownitems:hover button{
+    background-color: hsl(237, 77%, 55%);
+}
+.dropdownitems a:hover{
+    background-color: hsl(237, 95%, 62%);
+}
+    
+.cards{
+    background-image: url('https://images.hdqwalls.com/wallpapers/valorant-10k-zf.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%; 
+    height: 100vh; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+
+
+}
+@keyframes cardAnimation {
+0% { background: rgba(0, 0, 0, 0.6); box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+50% { background: rgba(0, 0, 0, 0.8); box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); }
+100% { background: rgba(0, 0, 0, 0.6); box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+}
+
+#card1{
+    width: 200px;
+    height: 300px;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: cardAnimation 3s infinite alternate;
+
+}
+.title h3{
+    text-align: left;
+    padding-left: 2%;
+    color: white;
+}
+
+.cards {
+    position: relative;
+}
+
+.image{
+
+   width: 50%;
+   vertical-align: middle;
+   padding: 5px;
+}
+
+
+
+.info h6{
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: gray;
+text-align: left;
+padding-left: 5%;
+}
+
+.info h4{
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+}
+
+table, tr, th {
+    cursor: pointer;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background-color: #092552;
+      }
+
+h4:hover{
+    color: red;
+    cursor: pointer;
+}
+footer {
+    width: 100%; 
+    position: flex;
+    justify-content: end;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding:100px 0 30px;
+    font-size : 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding:10px;
+}
+
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo2{
+    width: 80px;
+    margin: 30px; 
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.email-id{
+    width:fit-content;
+    border-bottom:1px solid #ccc;
+    margin: 20px 0;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+    
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border:0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border:0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+form button .fa-solid{
+    font-size: 16px;
+    color:#ccc;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color:#000;
+    background:#fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.box69 {
+    display: absolute;
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+    display: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(180%);
+}
