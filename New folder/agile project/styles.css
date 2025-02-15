@@ -14,7 +14,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     gap: 15px; 
-    padding-right: 100px;
+    padding-right: 50px;
 
 }
 .sociallinks{
@@ -33,8 +33,11 @@ body{
     z-index: 99;
 }
 .logo{
-    height: 150px;
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 250px;
 }
 
 .dropdownitems{
@@ -179,16 +182,19 @@ footer {
 
 .col{
     flex-basis: 25%;
-    padding:10px;
+    padding:5px;
 }
 
 .col:nth-child(2),.col:nth-child(3){
-    flex-basis: 15%;
+    flex-basis: 10%;
 }
 
 .logo2{
-    width: 80px;
-    margin: 30px; 
+    /* height: ; */
+    
+    top: 0;
+    width: px;
+    margin: 1px; 
 }
 
 .col h3{
