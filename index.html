@@ -5,121 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/878c1b09a8.js"></script>
 </head>
 <body>
-    <!-- static link navbar part -->
-     <div class="linknavbar">
+    <!-- Static link navbar part -->
+    <div class="linknavbar">
         <div class="sociallinks">
-            <a href="https://discord.com/"> <img src="nav bar images/discord_logo-removebg-preview.png" height="100%" width="100%"></a>
+            <a href="https://discord.com/">
+                <img src="nav bar images/discord_logo-removebg-preview.png" alt="Discord">
+            </a>
         </div>
         <div class="sociallinks">
-            <a href="https://www.facebook.com/"> <img src="nav bar images/facebook_backgroud_image-removebg-preview.png" height="100%" width="100%"></a>
+            <a href="https://www.facebook.com/">
+                <img src="nav bar images/facebook_backgroud_image-removebg-preview.png" alt="Facebook">
+            </a>
         </div>
         <div class="sociallinks">
-            <a href="https://www.reddit.com/?rdt=39031"> <img src="nav bar images/reddit-icon-thumbnail-removebg-preview.png" height="100%" width="100%"></a>
+            <a href="https://www.reddit.com/?rdt=39031">
+                <img src="nav bar images/reddit-icon-thumbnail-removebg-preview.png" alt="Reddit">
+            </a>
         </div>
         <div class="sociallinks">
-            <a href="https://www.twitch.tv/"> <img src="nav bar images/twitch-logo-removebg-preview.png" height="100%" width="100%"></a>
+            <a href="https://www.twitch.tv/">
+                <img src="nav bar images/twitch-logo-removebg-preview.png" alt="Twitch">
+            </a>
         </div>
         <div class="sociallinks">
-            <a href="https://x.com/?lang=en&mx=2"> <img src="nav bar images/x-logo-removebg-preview.png" height="100%" width="100%"></a>
+            <a href="https://x.com/?lang=en&mx=2">
+                <img src="nav bar images/x-logo-removebg-preview.png" alt="X">
+            </a>
         </div>
         <div class="sociallinks">
-            <a href="https://www.youtube.com/"> <img src="nav bar images/youtube logo.png" height="100%" width="100%"></a>
+            <a href="https://www.youtube.com/">
+                <img src="nav bar images/youtube logo.png" alt="YouTube">
+            </a>
         </div>
-     </div>
-     <!-- actual navbar  -->
-     <div class="navbar">
+    </div>
+    <!-- Actual navbar  -->
+    <nav class="navbar">
         <div class="logo">
-            <img src="nav bar images/TMN-removebg-preview.png" height="100%" width="100%">
+            <a href="home.html">
+            <img src="nav bar images/TMN-removebg-preview.png" alt="Logo">
+            </a>
         </div>
-
-        <div class="dropdownitems">
-            <button class="teams">Teams</button>
-            <div class="content">
-                <a href="">Gen.G Esports</a>
-                <a href="">Loud</a>
-                <a href="">Sentinels</a>
-                <a href="">DRX</a>
-                <a href="">Edward Gaming</a>
-                <a href="">OG</a>
-                <a href="">Paper Rex</a>
-                <a href="">Global Esports</a>
-            </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Teams <i class="fas fa-caret-down"></i></a>
+                <div class="content">
+                    <a href="#">Gen.G Esports</a>
+                    <a href="#">Loud</a>
+                    <a href="#">Sentinels</a>
+                    <a href="#">DRX</a>
+                    <a href="#">Edward Gaming</a>
+                    <a href="#">OG</a>
+                    <a href="#">Paper Rex</a>
+                    <a href="#">Global Esports</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Organisation <i class="fas fa-caret-down"></i></a>
+                <div class="content">
+                    <a href="#">Partners</a>
+                    <a href="#">NEWS</a>
+                    <a href="#">Rules</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Leaderboard</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+                <div class="content">
+                    <a href="#">About MVP's Network</a>
+                    <a href="#">About Team LHC</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <div class="dropdownitems">
-            <button class="organisation">organisation</button>
-            <div class="content">
-                <a href="">Partners</a>
-                <a href="">NEWS</a>
-                <a href="">Rules</a>
-            </div>
-        </div>
-        <div class="dropdownitems">
-            <button class="leaderboard">leaderboard</button>
-        </div>
-        <div class="dropdownitems">
-            <button class="About us">About us</button>
-            <div class="content">
-                <a href="">About MVP's Network</a>
-                <a href="">About Team LHC</a>
-                <a href="">Contact us</a>
-            </div>
-        </div>
-        <div class="dropdownitems">
-            <button class="Shop">Shop</button>
-        </div>
-     </div>
-     <div class="cards">
+    </nav>
+    <!-- Cards Section -->
+    <div class="cards">
         <div class="box" id="card1">TEAM</div>
         <div class="box" id="card1">TEAM</div>
         <div class="box" id="card1">TEAM</div>
         <div class="box" id="card1">TEAM</div>
         <div class="box" id="card1">TEAM</div>
     </div>
+    <!-- Featured Products Section -->
     <div class="title">
         <hr>
         <h3>FEATURED PRODUCTS</h3>
     </div>
-    <div>
-        <table>
-            <tr>
-                <th><img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset ">
-                    <div class="info">
-                        <h6>JERSEYS</h6>
-                        <h4>Limited Edition Pro Jersey</h4>
-                        <h4>$19.9</h4>
-                    </div>
-                </th> 
-                <th><img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset ">
-                    <div class="info">
-                        <h6>JERSEYS</h6>
-                        <h4>Limited Edition Pro Jersey</h4>
-                        <h4>$19.9</h4>
-                    </div>
-                </th>
-                <th><img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset ">
-                    <div class="info">
-                        <h6>JERSEYS</h6>
-                        <h4>Limited Edition Pro Jersey</h4>
-                        <h4>$19.9</h4>
-                    </div>
-                </th>
-                <th><img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset ">
-                    <div class="info">
-                        <h6>JERSEYS</h6>
-                        <h4>Limited Edition Pro Jersey</h4>
-                        <h4>$19.9</h4>
-                    </div>
-                </th>
-            </tr>
-        </table>
+    <div class="products swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide product-card">
+                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
+                <div class="info">
+                    <h6>JERSEYS</h6>
+                    <h4>Limited Edition Pro Jersey</h4>
+                    <h4>$19.9</h4>
+                </div>
+            </div>
+            <div class="swiper-slide product-card">
+                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
+                <div class="info">
+                    <h6>JERSEYS</h6>
+                    <h4>Limited Edition Pro Jersey</h4>
+                    <h4>$19.9</h4>
+                </div>
+            </div>
+            <div class="swiper-slide product-card">
+                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
+                <div class="info">
+                    <h6>JERSEYS</h6>
+                    <h4>Limited Edition Pro Jersey</h4>
+                    <h4>$19.9</h4>
+                </div>
+            </div>
+            <div class="swiper-slide product-card">
+                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
+                <div class="info">
+                    <h6>JERSEYS</h6>
+                    <h4>Limited Edition Pro Jersey</h4>
+                    <h4>$19.9</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
+    <!-- Footer Section -->
     <footer>
         <div class="row">
             <div class="col">
-                <img src="nav bar images/TMN-removebg-preview1.png" class="logo2">
+                <img src="nav bar images/TMN-removebg-preview1.png" class="logo2" alt="Logo">
                 <br><br>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci mollitia labore debitis omnis neque quaerat eaque? Maxime perspiciatis, numquam non dolor, amet dignissimos alias aliquam molestiae repellat deleniti qui?</p>
             </div>
@@ -135,13 +163,13 @@
                 <p>News</p>
             </div>
             <div class="col">
-                <h3>TERMS AND POLICIES </h3>       
+                <h3>TERMS AND POLICIES</h3>       
                 <p>Privacy</p>
                 <p>Terms & Conditions</p>
                 <br>
                 <br>
                 <br>
-                <h3>SHOP </h3>
+                <h3>SHOP</h3>
                 <p>Shop</p>
                 <p>Return Policy</p>
                 <p>Shipping Policy</p>
@@ -160,12 +188,45 @@
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
-    <hr>   
-    <div class="box69">
-        <div class="copyright">
-            The MVP's Network © 2025 - All Rights Reserved
-        </div> 
-    </div>     
+        </div>
+        <hr>
+        <div class="box69">
+            <div class="copyright">
+                The MVP's Network © 2025 - All Rights Reserved
+            </div> 
+        </div>     
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
