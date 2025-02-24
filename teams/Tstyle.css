@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+.linknavbar {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-right: 50px;
+    z-index: 100;
+}
+.sociallinks {
+    height: 20px;
+    width: 24px;
+}
+.sociallinks img {
+    height: 100%;
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #5f5f5f;
+    position: sticky;
+    top: 25px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    position: relative;
+    height: 200px;
+    width: 250px;
+    left:-40%;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.navbar .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-links a:hover,
+.nav-links .dropdown:hover > a {
+    background-color: #000000;
+    color: #00ff88;
+    border-radius: 5px;
+}
+.dropdown .content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+.dropdown:hover .content {
+    display: block;
+}
+.content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+.content a:hover {
+    background-color: #000000;
+    color: #00ff88;
+    border-radius: 5px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #00093c;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .navbar {
+        padding: 0 20px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+.cards {
+    background-image: url('https://images.hdqwalls.com/wallpapers/valorant-10k-zf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@keyframes cardAnimation {
+    0% { background: rgba(0, 0, 0, 0.7); box-shadow: 0 0 10px rgba(0, 255, 136, 0.2); }
+    50% { background: rgba(0, 0, 0, 0.8); box-shadow: 0 0 20px rgba(0, 255, 136, 0.4); }
+    100% { background: rgba(0, 0, 0, 0.7); box-shadow: 0 0 10px rgba(0, 255, 136, 0.2); }
+}
+#card1 {
+    width: 150px;
+    height: 370px;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: cardAnimation 3s infinite alternate;
+}
+
+.title {
+    text-align: center;
+    margin: 50px 0;
+}
+.title h3 {
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+.products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+}
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+.info h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    text-align: center;
+    margin: 10px 0;
+}
+.info h4 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+}
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #121212, #1a1a1a);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col {
+    flex-basis: 25%;
+    padding: 5px;
+}
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 10%;
+}
+.logo2 {
+    width: 100px;
+    margin: 1px;
+}
+.col h3 {
+    width: fit-content;
+    margin-bottom: 15px;
+    position: relative;
+}
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fa-solid {
+    font-size: 16px;
+    color: #00ff88;
+}
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #121212;
+    background: #00ff88;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+}
+.box69 {
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+}
