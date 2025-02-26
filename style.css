@@ -11,7 +11,29 @@ body {
     color: white;
 }
 
+/* New Navbar Section */
+.linknavbar {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-right: 50px;
+    z-index: 100;
+}
 
+.sociallinks {
+    height: 20px;
+    width: 24px;
+}
+
+.sociallinks img {
+    height: 100%;
+    width: 100%;
+}
 .navbar {
     width: 100%;
     height: 75px;
