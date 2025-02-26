@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Standings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header (Navbar) -->
+    <div class="home">
+        <!-- Actual navbar  -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img src="nav bar images/TMN-removebg-preview.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Teams <i class="fas fa-caret-down"></i></a>
+                <div class="content">
+                    <a href="#">Gen.G Esports</a>
+                    <a href="loud.html">Loud</a>
+                    <a href="#">Sentinels</a>
+                    <a href="#">DRX</a>
+                    <a href="#">Edward Gaming</a>
+                    <a href="#">OG</a>
+                    <a href="#">Paper Rex</a>
+                    <a href="#">Global Esports</a>
+                </div>
+            </li>
+<!--             to add space in near arrow
+-->
+            <li class="dropdown">       
+                <a href="#">Organisation <i class="fas fa-caret-down"></i></a>
+                <div class="content">
+                    <a href="#">Partners</a>
+                    <a href="#">NEWS</a>
+                    <a href="#">Rules</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Leaderboard</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+                <div class="content">
+                    <a href="#">About MVP's Network</a>
+                    <a href="#">About Team LHC</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1>Tournament Standings</h1>
+            <table class="leaderboard">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>Matches</th>
+                        <th>Rounds</th>
+                        <th>RD</th>
+                        <th>Round 1</th>
+                        <th>Round 2</th>
+                        <th>Round 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td class="team-cell">
+                            <img src="edg.png" alt="EDG Logo">
+                            <span>EDward Gaming</span>
+                        </td>
+                        <td>2-0</td>
+                        <td>73-52</td>
+                        <td>+21</td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="liquid.png" alt="Liquid">
+                                <span class="score">2:0</span>
+                            </div>
+                        </td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="g2.png" alt="G2">
+                                <span class="score">2:1</span>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2.</td>
+                        <td class="team-cell">
+                            <img src="vitality.png" alt="Vitality Logo">
+                            <span>Team Vitality</span>
+                        </td>
+                        <td>2-0</td>
+                        <td>63-51</td>
+                        <td>+12</td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="t1.png" alt="T1">
+                                <span class="score">2:0</span>
+                            </div>
+                        </td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="drx.png" alt="DRX">
+                                <span class="score">2:1</span>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>3.</td>
+                        <td class="team-cell">
+                            <img src="g2.png" alt="G2 Logo">
+                            <span>G2 Esports</span>
+                        </td>
+                        <td>2-1</td>
+                        <td>82-65</td>
+                        <td>+17</td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="trace.png" alt="Trace">
+                                <span class="score">2:0</span>
+                            </div>
+                        </td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="edg.png" alt="EDG">
+                                <span class="score">1:2</span>
+                            </div>
+                        </td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="liquid.png" alt="Liquid">
+                                <span class="score">2:0</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4.</td>
+                        <td class="team-cell">
+                            <img src="t1.png" alt="T1 Logo">
+                            <span>T1</span>
+                        </td>
+                        <td>2-1</td>
+                        <td>71-52</td>
+                        <td>+19</td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="vitality.png" alt="Vitality">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="drx.png" alt="DRX">
+                                <span class="score">2:1</span>
+                            </div>
+                        </td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="trace.png" alt="Trace">
+                                <span class="score">2:0</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5.</td>
+                        <td class="team-cell">
+                            <img src="drx.png" alt="DRX Logo">
+                            <span>DRX</span>
+                        </td>
+                        <td>1-2</td>
+                        <td>73-76</td>
+                        <td>-3</td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="sentinels.png" alt="Sentinels">
+                                <span class="score">2:0</span>
+                            </div>
+                        </td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="vitality.png" alt="Vitality">
+                                <span class="score">1:2</span>
+                            </div>
+                        </td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="t1.png" alt="T1">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6.</td>
+                        <td class="team-cell">
+                            <img src="liquid.png" alt="Liquid Logo">
+                            <span>Team Liquid</span>
+                        </td>
+                        <td>1-2</td>
+                        <td>70-85</td>
+                        <td>-15</td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="edg.png" alt="EDG">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                        <td class="match-win">
+                            <div class="match-result">
+                                <img src="sentinels.png" alt="Sentinels">
+                                <span class="score">2:1</span>
+                            </div>
+                        </td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="g2.png" alt="G2">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>7.</td>
+                        <td class="team-cell">
+                            <img src="sentinels.png" alt="Sentinels Logo">
+                            <span>Sentinels</span>
+                        </td>
+                        <td>0-2</td>
+                        <td>41-62</td>
+                        <td>-21</td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="drx.png" alt="DRX">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="liquid.png" alt="Liquid">
+                                <span class="score">1:2</span>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>8.</td>
+                        <td class="team-cell">
+                            <img src="trace.png" alt="Trace Logo">
+                            <span>Trace Esports</span>
+                        </td>
+                        <td>0-2</td>
+                        <td>22-52</td>
+                        <td>-30</td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="g2.png" alt="G2">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                        <td class="match-loss">
+                            <div class="match-result">
+                                <img src="t1.png" alt="T1">
+                                <span class="score">0:2</span>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                <h3>MVP</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci mollitia labore debitis omnis neque quaerat eaque?</p>
+            </div>
+            <div class="col">
+                <h3>ABOUT</h3>
+                <p>Who we are</p>
+                <p>Management Team</p>
+                <br>
+                <h3>COMPANY</h3>   
+                <p>Teams</p>
+                <p>News</p>
+            </div>
+            <div class="col">
+                <h3>TERMS AND POLICIES</h3>       
+                <p>Privacy</p>
+                <p>Terms & Conditions</p>
+                <br>
+                <h3>SHOP</h3>
+                <p>Shop</p>
+                <p>Return Policy</p>
+                <p>Shipping Policy</p>
+            </div>
+            <div class="col">
+                <h3>Newsletter</h3>
+                <form>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

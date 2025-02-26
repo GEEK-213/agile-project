@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:black;
+    color: white;
+    margin-top: -65px;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #5f5f5f;
+    position: sticky;
+    top: 25px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    position: relative;
+    height: 200px;
+    width: 250px;
+    left: -40%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links a:hover,
+.nav-links .dropdown:hover > a {
+    background-color: hsl(0, 0%, 0%);
+    color: #0ecd5a;
+    border-radius: 5px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hsl(0, 0%, 0%);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.content a:hover {
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+}
+
+
+/* Main Content Styles */
+.main-content {
+    margin-top: 100px;
+    padding: 2rem 0;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #00ff88;
+    font-size: 2.5rem;
+    
+}
+
+/* Updated Leaderboard Table Styles */
+.leaderboard {
+    width: 90%;
+    border-collapse: collapse;
+    background: black;
+    box-shadow: 0 20px 40px rgba(98, 181, 110, 0.5);
+    border-radius: 8px;
+    transform: translateY(-30px);
+    overflow: hidden;
+    margin-left: 80px;
+  
+}
+
+.leaderboard th,
+.leaderboard td {
+    padding: 1rem;
+    text-align: left;
+    /* border-bottom: 1px solid #eee; */
+    vertical-align: middle;
+}
+
+.leaderboard th {
+    background-color:#b2afaf;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+
+}
+
+.team-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.team-cell img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.match-result {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.match-result img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.match-win .match-result {
+    background-color: rgba(74, 222, 128, 0.1);
+    color: #15803d;
+}
+
+.match-loss .match-result {
+    background-color: rgba(244, 63, 94, 0.1);
+    color: #be123c;
+}
+
+.score {
+    font-weight: 500;
+}
+
+tr:hover {
+    background-color: rgb(172, 162, 162);
+}
+/* Footer */
+.footer {
+    background: #1e1e1e;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .col {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer .col h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer .col p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer .logo {
+    width: 100px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .store, .news {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main h1 {
+        font-size: 60px;
+    }
+
+    .main p {
+        font-size: 25px;
+    }
+}

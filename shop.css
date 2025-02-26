@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Dynamic background image */
+    background: url('https://wallpaperaccess.com/full/26174.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Optional overlay for better readability */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 18, 18, 0.8); 
+    z-index: -1;
+  }
+  
+  /* Navbar */
+
+  .navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #5f5f5f;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    margin: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo img {
+    position: relative;
+    height: 200px;
+    width: 250px;
+    left: -40%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links a:hover,
+.nav-links .dropdown:hover > a {
+    background-color: hsl(0, 0%, 0%);
+    color: #0ecd5a;
+    border-radius: 5px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hsl(0, 0%, 0%);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.content a:hover {
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+}
+
+  
+  /* Filter Section */
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  .filter-options {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(251, 251, 251, 0.1);
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .filterbutton {
+    position: relative;
+  }
+  .filterbutton button {
+    cursor: pointer;
+  }
+  .filterbutton:focus-within .filter-options {
+    display: block;
+  }
+  .filter-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .filter-options a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .filterbutton button,
+  .featuredbutton button {
+    padding: 12px 25px;
+    background-color: #054508;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 100px;
+    transition: background 0.3s, box-shadow 1s;
+  }
+  
+  .filterbutton button:hover,
+  .featuredbutton button:hover {
+    background-color: #0ecd5a;
+    box-shadow: 0 4px 8px rgba(132, 132, 132, 0.4);
+  }
+  
+  /* Shop Section */
+  .shop {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* gap between different shop sections */
+  }
+  
+  .Tshirt,
+  .equip,
+  .equip2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* gap between individual product cards */
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Section Headings */
+  .Tshirt h4,
+  .equip h2,
+  .equip2 h2 {
+    width: 100%;
+    text-align: left;  /* Align heading to left */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Product Cards (Unified styling for consistency) */
+  .product2 {
+    text-align: center;
+    background: rgba(31, 31, 31, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 82, 0, 0.3);
+    width: 220px;
+    max-width: 95%;
+    margin: 0 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(7, 106, 15, 0.5);
+  }
+  
+  .product2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #1e1e1e;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .col {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer .col h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer .col p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer .logo {
+    width: 100px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #ffffff;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .icons {
+      flex-direction: column;
+    }
+    .Tshirt,
+    .equip,
+    .equip2 {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
