@@ -105,7 +105,7 @@
     text-transform: uppercase;
     position: relative;
     z-index: 2;
-    text-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+    text-shadow: 0 0 15px #11ff00;
   }
   
   .team-description {
@@ -129,7 +129,7 @@
   }
   
   .achievement {
-    border: 1px solid rgba(255, 51, 51, 0.3);
+    border: 1px solid #11ff00;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -141,7 +141,7 @@
   
   .achievement:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 51, 51, 0.7);
+    border-color: #11ff00;
   }
   
   .place {
@@ -177,7 +177,7 @@
     margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+    text-shadow: 0 0 10px #11ff00;
   }
   
   .player-carousel {
@@ -227,14 +227,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 51, 51, 0.3);
+    border: 1px solid #11ff00;
     transition: all 0.3s ease;
   }
   
   .nav-button:hover {
     color: #ffffff;
-    border-color: rgba(255, 51, 51, 0.7);
-    background: rgba(255, 51, 51, 0.2);
+    border-color: #11ff00;
+    background: #11ff00;
   }
   
   .prev-button {
@@ -253,12 +253,12 @@
     transform: translateX(-50%);
     width: 100%;
     max-width: 600px;
-    border: 1px solid rgba(255, 51, 51, 0.3);
+    border: 1px solid #11ff00;
     border-radius: 12px;
     background-color: #111111;
     padding: 30px;
     display: none;
-    box-shadow: 0 0 20px rgba(255, 51, 51, 0.3);
+    box-shadow: 0 0 20px #11ff00;
     transition: all 0.3s ease;
     will-change: transform;
   }
@@ -301,14 +301,14 @@
     color: #fff;
     font-weight: bold;
     font-size: 1.2rem;
-    box-shadow: 0 0 15px rgba(255, 51, 51, 0.5);
+    box-shadow: 0 0 15px #11ff00;
     z-index: 5;
     animation: pulse 2s infinite alternate;
   }
   
   @keyframes pulse {
-    from { opacity: 0.8; box-shadow: 0 0 10px rgba(255, 51, 51, 0.5); }
-    to { opacity: 1; box-shadow: 0 0 20px rgba(255, 51, 51, 0.8); }
+    from { opacity: 0.8; box-shadow: 0 0 10px #11ff00; }
+    to { opacity: 1; box-shadow: 0 0 20px #11ff00; }
   }
   
   /* Player Badges */
@@ -330,7 +330,7 @@
     padding: 5px 10px;
     border-radius: 4px;
     text-transform: uppercase;
-    box-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+    box-shadow: 0 0 10px #11ff00;
   }
   
   /* Player Image Container */
@@ -348,7 +348,7 @@
     right: -5px;
     bottom: -5px;
     border-radius: 50%;
-    background: rgba(255, 51, 51, 0.5);
+    background: #11ff00;
     filter: blur(10px);
     z-index: 0;
     animation: glow 2s infinite alternate;
@@ -386,7 +386,7 @@
     color: #11ff00;
     text-transform: uppercase;
     margin-bottom: 5px;
-    text-shadow: 0 0 10px rgba(255, 51, 51, 0.5);
+    text-shadow: 0 0 10px #11ff00;
   }
   
   .player-role {
@@ -399,7 +399,7 @@
     border-radius: 20px;
     margin-bottom: 25px;
     text-transform: uppercase;
-    box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+    box-shadow: 0 0 10px #11ff00;
   }
   
   /* Stats Container */
@@ -411,7 +411,7 @@
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid rgba(255, 51, 51, 0.2);
+    border: 1px solid #11ff00;
   }
   
   .stats-column {
@@ -450,10 +450,10 @@
   
   .stat-fill {
     height: 100%;
-    background: linear-gradient(90deg, rgba(255, 51, 51, 0.8), #11ff00);
+    background: linear-gradient(90deg, #11ff00, #11ff00);
     border-radius: 4px;
     position: relative;
-    box-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
+    box-shadow: 0 0 8px #11ff00;
     animation: fillAnimation 1s ease-out forwards;
     transform-origin: left;
   }
@@ -471,7 +471,7 @@
     font-size: 0.9rem;
     color: #11ff00;
     padding-top: 15px;
-    border-top: 1px solid rgba(255, 51, 51, 0.2);
+    border-top: 1px solid #11ff00;
   }
   
   /* Pagination */
@@ -494,11 +494,11 @@
   .pagination-dot.active {
     background-color: #11ff00;
     transform: scale(1.2);
-    box-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
+    box-shadow: 0 0 8px #11ff00;
   }
   
   .pagination-dot:hover {
-    background-color: rgba(255, 51, 51, 0.5);
+    background-color: #11ff00;
   }
   
   /* Footer */
@@ -518,7 +518,7 @@
     letter-spacing: 2px;
     margin: 20px 0;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+    text-shadow: 0 0 10px #11ff00;
   }
   
   .copyright {
@@ -590,7 +590,7 @@
   
   /* Animations for dragging */
   @keyframes pulse {
-    from { opacity: 0.8; box-shadow: 0 0 10px rgba(255, 51, 51, 0.5); }
-    to { opacity: 1; box-shadow: 0 0 20px rgba(255, 51, 51, 0.8); }
+    from { opacity: 0.8; box-shadow: 0 0 10px #11ff00; }
+    to { opacity: 1; box-shadow: 0 0 20px #11ff00; }
   }
   
