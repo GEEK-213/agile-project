@@ -1,0 +1,5 @@
+# learderboard changes 
+removed hover highlight from learderboard.
+table heading size increased 
+
+# nav bar intergation error

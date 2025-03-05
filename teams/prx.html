@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Rex PAGE</title>
+    <title>Paper Rex</title>
     <link rel="stylesheet" href="Tstyle.css">
+    <link rel="stylesheet" href="prx.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/878c1b09a8.js"></script>
     <style>
         .cards {
-         background-image : url('https://cdn-wp.thesportsrush.com/2022/04/e2d9dd53-paper-rex.jpg?format=auto&w=3840&q=75');
+         background-image : url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/74e755125867939.614a3f186daf3.png');
         }
      </style>
 </head>
@@ -65,7 +66,6 @@
                     <a href="fnatic.html">Fnatic</a>
                     <a href="evilg.html">Evil Geniuses</a>
                 </div>
-
             </li>
             <li class="dropdown">
                 <a href="#">Organisation <i class="fas fa-caret-down"></i></a>
@@ -96,61 +96,68 @@
             <div></div>
         </div>
     </nav>
-    <!-- Cards Section -->
-    <div class="cards swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide box" id="card1">TEAM</div>
-            <div class="swiper-slide box" id="card1">TEAM</div>
-            <div class="swiper-slide box" id="card1">TEAM</div>
-            <div class="swiper-slide box" id="card1">TEAM</div>
-            <div class="swiper-slide box" id="card1">TEAM</div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-    <!-- Featured Products Section -->
-    <div class="title">
-        <hr>
-        <h3>FEATURED PRODUCTS</h3>
-    </div>
-    <div class="products swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide product-card">
-                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
-                <div class="info">
-                    <h6>JERSEYS</h6>
-                    <h4>Limited Edition Pro Jersey</h4>
-                    <h4>$19.9</h4>
-                </div>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+          <div class="logo-container">
+            <div class="logo-glow"></div><br>
+            <div class="sen-logo"><img src="https://owcdn.net/img/62bbebb185a7e.png" alt=""></div>
+          </div><br><br><br><br>
+          <h1 class="team-name">Paper Rex</h1>
+          <p class="team-description">
+            Paper Rex is an esports organization based in Singapore. The organization was co-founded in January 
+            2020 by Harley "dsn" Örwall, Nikhil "nikH" Hathiramani, Matthew Djojonegoro and Gad Tan. 
+          </p>
+          
+          <!-- Achievements -->
+          <div class="achievements">
+            <div class="achievement">
+              <div class="place">1st</div>
+              <div class="tournament">VCT 2023: Pacific League</div>
+              <div class="year">2023</div>
             </div>
-            <div class="swiper-slide product-card">
-                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
-                <div class="info">
-                    <h6>JERSEYS</h6>
-                    <h4>Limited Edition Pro Jersey</h4>
-                    <h4>$19.9</h4>
-                </div>
+            <div class="achievement">
+              <div class="place">1st</div>
+              <div class="tournament">Valorant India Invitational</div>
+              <div class="year">2022</div>
             </div>
-            <div class="swiper-slide product-card">
-                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
-                <div class="info">
-                    <h6>JERSEYS</h6>
-                    <h4>Limited Edition Pro Jersey</h4>
-                    <h4>$19.9</h4>
-                </div>
+            <div class="achievement">
+              <div class="place">1st</div>
+              <div class="tournament">APAC Stage 2 Challengers</div>
+              <div class="year">2022</div>
             </div>
-            <div class="swiper-slide product-card">
-                <img class="image" src="https://cdn.shopify.com/s/files/1/0580/5306/6941/files/1_1977d126-1b4e-44c2-a96b-2f06caa4d7ee.png" alt="SENset">
-                <div class="info">
-                    <h6>JERSEYS</h6>
-                    <h4>Limited Edition Pro Jersey</h4>
-                    <h4>$19.9</h4>
-                </div>
+          </div>
+        </header>
+    
+        <!-- Roster Section -->
+        <section class="roster">
+          <h2 class="roster-title">Paper Rex VALORANT ROSTER</h2>
+          
+          <div class="player-carousel">
+            <button class="nav-button prev-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+            </button>
+            
+            <div class="carousel-container">
+              <div class="player-cards">
+                <!-- Player cards will be inserted here by JavaScript -->
+              </div>
             </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
+            
+            <button class="nav-button next-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+          
+          <div class="pagination">
+            <!-- Pagination dots will be inserted here by JavaScript -->
+          </div>
+        </section>
+    
     <!-- Footer Section -->
     <footer>
         <div class="row">
@@ -236,5 +243,6 @@
             },
         });
     </script>
+     <script src="prx.js"></script>
 </body>
 </html>

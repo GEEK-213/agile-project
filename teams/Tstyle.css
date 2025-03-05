@@ -3,16 +3,28 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #121212;
     font-family: 'Arial', sans-serif;
     color: #fff;
 }
+
+/* CSS Variables for consistent theming */
+:root {
+    --text-color: #ffffff;
+    --dark-bg: #000000;
+    --neon-green: #0ecd5a;
+    --neon-blue: #00aff0;
+    --card-bg: rgba(0, 0, 0, 0.9);
+}
+
+/* Navigation styles */
 .linknavbar {
     position: fixed;
     width: 100%;
     height: 25px;
-    background-color: #000000;
+    background-color: var(--dark-bg);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -31,7 +43,7 @@ body {
 .navbar {
     width: 100%;
     height: 75px;
-    background-color: #5f5f5f;
+    background-color: var(--dark-bg);
     position: sticky;
     top: 25px;
     left: 0;
@@ -63,7 +75,7 @@ body {
     position: relative;
 }
 .nav-links a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -71,8 +83,8 @@ body {
 }
 .nav-links a:hover,
 .nav-links .dropdown:hover > a {
-    background-color: #000000;
-    color: #00ff88;
+    background-color: var(--neon-green);
+    color: var(--dark-bg);
     border-radius: 5px;
 }
 .dropdown .content {
@@ -80,7 +92,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #000000;
+    background-color: var(--card-bg);
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -90,15 +102,14 @@ body {
     display: block;
 }
 .content a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     padding: 10px;
     display: block;
     transition: background-color 0.3s;
 }
 .content a:hover {
-    background-color: #000000;
-    color: #00ff88;
+    background-color: var(--neon-blue);
     border-radius: 5px;
 }
 .hamburger {
@@ -109,7 +120,7 @@ body {
 .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--text-color);
     margin: 5px;
     transition: all 0.3s;
 }
@@ -117,7 +128,7 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #00093c;
+        background-color: var(--dark-bg);
         position: absolute;
         top: 75px;
         left: 0;
@@ -162,52 +173,32 @@ body {
     justify-content: center;
     align-items: center;
     animation: cardAnimation 3s infinite alternate;
+    border: 2px solid rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
 }
 
-.title {
-    text-align: center;
-    margin: 50px 0;
+#card1 .rating {
+    font-size: 2.8em;
+    background: linear-gradient(135deg, #00ff88 0%, #00ccff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
-.title h3 {
-    text-align: center;
-    padding: 0;
-    color: white;
+
+#card1 .position {
+    background: rgba(0, 255, 136, 0.2);
+    border: 1px solid rgba(0, 255, 136, 0.3);
 }
-.products {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+
+#card1 .player-image {
+    border: 2px solid rgba(0, 255, 136, 0.3);
 }
-.product-card {
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+
+#card1:hover {
+    transform: translateY(-20px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 255, 136, 0.3);
 }
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
-}
-.image {
-    width: 100%;
-    border-radius: 10px;
-}
-.info h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: gray;
-    text-align: center;
-    margin: 10px 0;
-}
-.info h4 {
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    margin: 5px 0;
-}
+
 footer {
     width: 100%;
     background: linear-gradient(to right, #121212, #1a1a1a);
@@ -298,3 +289,5 @@ hr {
 .copyright {
     text-align: center;
 }
+
+
