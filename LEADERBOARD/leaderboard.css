@@ -1,3 +1,12 @@
+/* CSS Variables for consistent theming */
+:root {
+    --text-color: #ffffff;
+    --dark-bg: #000000;
+    --neon-green: #0ecd5a;
+    --neon-blue: #00aff0;
+    --card-bg: rgba(0, 0, 0, 0.9);
+}
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +15,39 @@
 }
 
 body {
-    background-color:black;
+    background-color: #121212;
     color: white;
-    margin-top: -65px;
 }
 
+
+/* New Navbar Section */
+.linknavbar {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-right: 50px;
+    z-index: 100;
+}
+
+.sociallinks {
+    height: 20px;
+    width: 24px;
+}
+
+.sociallinks img {
+    height: 100%;
+    width: 100%;
+}
 
 .navbar {
     width: 100%;
     height: 75px;
-    background-color: #5f5f5f;
+    background-color: black;
     position: sticky;
     top: 25px;
     left: 0;
@@ -52,7 +84,7 @@ body {
 }
 
 .nav-links a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -60,19 +92,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hover Effects */
 .nav-links a:hover,
 .nav-links .dropdown:hover > a {
-    background-color: hsl(0, 0%, 0%);
-    color: #0ecd5a;
+    background-color: var(--neon-green);
+    color: var(--dark-bg);
     border-radius: 5px;
 }
 
+/* Dropdown Menu */
 .dropdown .content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: hsl(0, 0%, 0%);
+    background-color: var(--card-bg);
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -84,7 +118,7 @@ body {
 }
 
 .content a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -92,9 +126,25 @@ body {
 }
 
 .content a:hover {
-    background-color: hsl(0, 0%, 0%);
+    background-color: var(--neon-blue);
     border-radius: 5px;
 }
+
+/* Mobile Menu Button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px;
+    transition: all 0.3s;
+}
+
 
 
 /* Main Content Styles */
