@@ -340,6 +340,7 @@ form button {
     cursor: pointer;
 }
 form button .fa-solid {
+    display: flex;
     font-size: 16px;
     color: #00ff88;
 }
