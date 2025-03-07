@@ -1,375 +1,360 @@
-/* CSS Variables for consistent theming */
-:root {
-    --text-color: #ffffff;
-    --dark-bg: #000000;
-    --neon-green: #0ecd5a;
-    --neon-blue: #00aff0;
-    --card-bg: rgba(0, 0, 0, 0.9);
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Dynamic background image */
+  background-color: #1e1e1e;
+  background-size: cover;
+  color: #fff;
+  position: relative;
 }
 
-/* New Navbar Section */
-.linknavbar {
-    position: fixed;
-    width: 100%;
-    height: 25px;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-    padding-right: 50px;
-    z-index: 100;
+/* Optional overlay for better readability */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(18, 18, 18, 0.8); 
+  z-index: -1;
 }
 
-.sociallinks {
-    height: 20px;
-    width: 24px;
-}
-
-.sociallinks img {
-    height: 100%;
-    width: 100%;
-}
+/* Navbar */
 
 .navbar {
-    width: 100%;
-    height: 75px;
-    background-color: black;
-    position: sticky;
-    top: 25px;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    z-index: 99;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 75px;
+  background-color: #5f5f5f;
+  position: sticky; 
+  top: 0;
+  left: 0;
+  margin: 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 99;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 .logo img {
-    position: relative;
-    height: 200px;
-    width: 250px;
-    left: -40%;
+  position: relative;
+  height: 200px;
+  width: 250px;
+  left: -40%;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
 }
 
 .navbar .nav-links a {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .nav-links li {
-    position: relative;
+  position: relative;
 }
 
 .nav-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Hover Effects */
 .nav-links a:hover,
 .nav-links .dropdown:hover > a {
-    background-color: var(--neon-green);
-    color: var(--dark-bg);
-    border-radius: 5px;
+  background-color: hsl(0, 0%, 0%);
+  color: #0ecd5a;
+  border-radius: 5px;
 }
 
-/* Dropdown Menu */
 .dropdown .content {
-    display: none;
-    position: absolute;
-    top: 155%;
-    left: 0;
-    background-color: var(--card-bg);
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: hsl(0, 0%, 0%);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .dropdown:hover .content {
-    display: block;
+  display: block;
 }
 
 .content a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    transition: background-color 0.3s;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
 }
 
 .content a:hover {
-    background-color: var(--neon-blue);
-    border-radius: 5px;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 5px;
 }
 
-/* Mobile Menu Button */
-.hamburger {
-    display: none;
+
+/* Filter Section */
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.filter-options {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(251, 251, 251, 0.1);
+  border-radius: 5px;
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  overflow: hidden;
+}
+.filterbutton {
+  position: relative;
+}
+.filterbutton button {
+  cursor: pointer;
+}
+.filterbutton:focus-within .filter-options {
+  display: block;
+}
+.filter-options a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.filter-options a:hover {
+  background-color: #f1f1f1;
+}
+
+.filterbutton button,
+.featuredbutton button {
+  padding: 12px 25px;
+  background-color: #054508;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 100px;
+  transition: background 1s, box-shadow 1s;
+}
+
+.filterbutton button:hover,
+.featuredbutton button:hover {
+  background-color: #0ecd5a;
+  box-shadow: 0 4px 8px rgba(132, 132, 132, 0.4);
+}
+
+/* Shop Section */
+.shop {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* gap between different shop sections */
+}
+
+.Tshirt,
+.equip,
+.equip2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px; /* gap between individual product cards */
+  justify-content: center;
+  width: 100%;
+}
+
+/* Section Headings */
+.Tshirt h4,
+.equip h2,
+.equip2 h2 {
+  width: 100%;
+  text-align: center;  /* Align heading to left */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Product Cards (Unified styling for consistency) */
+.product2 {
+  text-align: center;
+  background: rgba(31, 31, 31, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 82, 0, 0.3);
+  width: 220px;
+  max-width: 95%;
+  margin: 0 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(7, 106, 15, 0.5);
+}
+
+.product2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+button {
+  background: linear-gradient(45deg, #054508, #0ecd5a);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(14, 205, 90, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #0ecd5a, #054508);
+  transform: scale(1.1);
+  box-shadow: 0px 8px 20px rgba(14, 205, 90, 0.5);
+}
+
+  /* Footer */
+footer {
+width: 100%;
+background: linear-gradient(to right, #121212, #1a1a1a);
+color: #fff;
+padding: 100px 0 30px;
+font-size: 13px;
+line-height: 20px;
+}
+.row {
+width: 85%;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+}
+.col {
+flex-basis: 25%;
+padding: 5px;
+}
+.col:nth-child(2), .col:nth-child(3) {
+flex-basis: 10%;
+}
+.logo2 {
+width: 100px;
+margin: 1px;
+}
+.col h3 {
+width: fit-content;
+margin-bottom: 15px;
+position: relative;
+}
+.email-id {
+width: fit-content;
+border-bottom: 1px solid #ccc;
+margin: 20px 0;
+}
+form {
+padding-bottom: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid #ccc;
+margin-bottom: 50px;
+}
+form .fa-regular {
+font-size: 18px;
+margin-right: 10px;
+}
+form input {
+width: 100%;
+background: transparent;
+color: #ccc;
+border: 0;
+outline: none;
+}
+form button {
+background: transparent;
+border: 0;
+outline: none;
+cursor: pointer;
+}
+form button .fa-solid {
+font-size: 16px;
+color: #00ff88;
+}
+.social-icons .fa-brands {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+color: #121212;
+background: #00ff88;
+margin-right: 15px;
+cursor: pointer;
+}
+hr {
+width: 90%;
+border: 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+margin: 20px auto;
+}
+.box69 {
+text-align: center;
+}
+.copyright {
+text-align: center;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color);
-    margin: 5px;
-    transition: all 0.3s;
-}
-
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #121212;
-    color: white;
-}
-
-  
-  /* Filter Section */
-  .filter {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 20px;
   }
-  .filter-options {
-    display: none;
-    position: absolute;
-    background: white;
-    border: 1px solid #ddd;
-    box-shadow: 0px 4px 6px rgba(251, 251, 251, 0.1);
-    border-radius: 5px;
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    overflow: hidden;
-  }
-  .filterbutton {
-    position: relative;
-  }
-  .filterbutton button {
-    cursor: pointer;
-  }
-  .filterbutton:focus-within .filter-options {
-    display: block;
-  }
-  .filter-options a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-  }
-  .filter-options a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .filterbutton button,
-  .featuredbutton button {
-    padding: 12px 25px;
-    background-color: #054508;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 100px;
-    transition: background 0.3s, box-shadow 1s;
-  }
-  
-  .filterbutton button:hover,
-  .featuredbutton button:hover {
-    background-color: #0ecd5a;
-    box-shadow: 0 4px 8px rgba(132, 132, 132, 0.4);
-  }
-  
-  button {
-    background: linear-gradient(45deg, #054508, #0ecd5a);
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(14, 205, 90, 0.3);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  button:hover {
-    background: linear-gradient(180deg, #0ecd5a, #054508);
-    transform: scale(1.1);
-    box-shadow: 0px 8px 20px rgba(14, 205, 90, 0.5);
-  }
-  /* Shop Section */
-  .shop {
-    padding: 20px;
-    display: flex;
+  .icons {
     flex-direction: column;
-    gap: 40px; /* gap between different shop sections */
   }
-  
   .Tshirt,
   .equip,
   .equip2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px; /* gap between individual product cards */
-    justify-content: center;
-    width: 100%;
-  }
-  
-  /* Section Headings */
-  .Tshirt h4,
-  .equip h2,
-  .equip2 h2 {
-    width: 100%;
-    text-align: left;  /* Align heading to left */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  /* Product Cards (Unified styling for consistency) */
-  .product2 {
-    text-align: center;
-    background: rgba(31, 31, 31, 0.9);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 82, 0, 0.3);
-    width: 220px;
-    max-width: 95%;
-    margin: 0 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  .product2:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(7, 106, 15, 0.5);
+  .footer {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .product2 img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  /* Footer */
-footer {
-    width: 100%;
-    background: linear-gradient(to right, #121212, #1a1a1a);
-    color: #fff;
-    padding: 100px 0 30px;
-    font-size: 13px;
-    line-height: 20px;
 }
-.row {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.col {
-    flex-basis: 25%;
-    padding: 5px;
-}
-.col:nth-child(2), .col:nth-child(3) {
-    flex-basis: 10%;
-}
-.logo2 {
-    width: 100px;
-    margin: 1px;
-}
-.col h3 {
-    width: fit-content;
-    margin-bottom: 15px;
-    position: relative;
-}
-.email-id {
-    width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
-}
-form {
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 50px;
-}
-form .fa-regular {
-    font-size: 18px;
-    margin-right: 10px;
-}
-form input {
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
-}
-form button {
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-form button .fa-solid {
-    font-size: 16px;
-    color: #00ff88;
-}
-.social-icons .fa-brands {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #121212;
-    background: #00ff88;
-    margin-right: 15px;
-    cursor: pointer;
-}
-hr {
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
-}
-.box69 {
-    text-align: center;
-}
-.copyright {
-    text-align: center;
-}
-
-  
