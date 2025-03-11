@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>About us | TMN Network</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <!-- Social Links Navbar - Keeping the same as index.html -->
     <div class="linknavbar">
         <div class="sociallinks">
             <a href="https://discord.com/">
@@ -40,7 +46,8 @@
             </a>
         </div>
     </div>
-        <!-- Navigation Bar -->
+    <div class="home">
+        <!-- Navigation Bar - Keeping the same as index.html -->
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
@@ -59,8 +66,8 @@
                         <a href="teams/evilg.html">Evil Geniuses</a>
                     </div>
                 </li>
-                <li class="dropdown">       
-                    <a href="org.html" class="active">Organisation <i class="fas fa-caret-down"></i></a>
+                <li class="dropdown">
+                    <a href="org.html">Organisation <i class="fas fa-caret-down"></i></a>
                     <div class="content">
                         <a href="#partners">Partners</a>
                         <a href="#news">NEWS</a>
@@ -71,10 +78,10 @@
                     <a href="LEADERBOARD/leaderboard.html">Leaderboard</a>
                 </li>
                 <li class="dropdown">
-                    <a href="aboutus.html">About Us <i class="fas fa-caret-down"></i></a>
+                    <a href="aboutus.html" class="active">About Us <i class="fas fa-caret-down"></i></a>
                     <div class="content">
                         <a href="#MVP-net">About MVP's Network</a>
-                        <a href="#team-grid">About Team LHC</a>
+                        <a href="#team-section">About Team LHC</a>
                         <a href="#contact-section">Contact Us</a>
                     </div>
                 </li>
@@ -87,87 +94,180 @@
                 <div></div>
                 <div></div>
             </div>
-        </nav>    
-    <div class="MVP-net" id="MVP-net">
-        <h1 class="glitch" data-text="About MVP's Network">About MVP's Network</h1>
-        <div class="journey">
-            <div class="img">
-                <img src="assets/journey.jpg" height="100%" width="100%">
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>About TMN Network</h1>
+                <p>Learn about our mission, our team, and how we're revolutionizing the esports industry with
+                    cutting-edge analytics and community engagement.</p>
+                <div class="cta-buttons">
+                    <a href="#MVP-net" class="cta-button">Our Network</a>
+                    <a href="#team-section" class="cta-button secondary">Meet The Team</a>
+                </div>
             </div>
-            <div class="text">
-                <h1 class="subtitle">MVP's Network</h1>
-                <p class="subtitle">The leading platform for tracking and ranking e-sports teams worldwide, using advanced analytics to provide real-time leaderboards, performance insights, and tournament standings across multiple games and leagues, ensuring accuracy, transparency, and a competitive edge for players, fans, and organizations alike.</p>
+        </section>
+        <!-- About Section -->
+        <section class="featured-products" id="MVP-net">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-globe"></i> Our Network</h2>
+                    <p class="section-subtitle">Building the Future of Esports</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://media.assettype.com/afkgaming%2F2023-06%2F1be94db3-f0b6-4be1-a3af-aa0118657534%2FCover_Image___All_VCT_Masters_And_Valorant_Champions_Winners_In_History___Teams_And_Players.jpg?auto=format%2Ccompress&dpr=1.0&w=1200"
+                            alt="TMN Journey">
+                    </div>
+                    <div class="about-text">
+                        <h3>TMN Network</h3>
+                        <p>The leading platform for tracking and ranking e-sports teams worldwide, using advanced
+                            analytics to provide real-time leaderboards, performance insights, and tournament standings
+                            across multiple games and leagues, ensuring accuracy, transparency, and a competitive edge
+                            for players, fans, and organizations alike.</p>
+                        <a href="" class="view-all-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="news" id="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-users"></i> Meet Our Team</h2>
+                    <p class="section-subtitle">The Minds Behind TMN Network</p>
+                </div>
+                <div class="news-grid">
+                    <!-- Team Member 1 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/300x200/333/fff?text=Faaris" alt="Faaris">
+                            <span class="news-tag">Leader</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Faaris</h3>
+                            <p>TEAM LEAD/DESIGNER</p>
+                            <div class="social-team-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 2 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/300x200/333/fff?text=Gaurang" alt="Gaurang">
+                            <span class="news-tag">CLIENT</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Gaurang</h3>
+                            <p>CLIENT</p>
+                            <div class="social-team-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 3 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/300x200/333/fff?text=Chetan" alt="Chetan">
+                            <span class="news-tag">TESTER</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Chetan</h3>
+                            <p>TESTER</p>
+                            <div class="social-team-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 4 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/300x200/333/fff?text=Ketan" alt="Ketan">
+                            <span class="news-tag">DEV 1</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Ketan</h3>
+                            <p>DEVELOPER</p>
+                            <div class="social-team-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 5 -->
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/300x200/333/fff?text=Anish" alt="Anish">
+                            <span class="news-tag">DEV 2</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Anish</h3>
+                            <p>DEVELOPER</p>
+                            <div class="social-team-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- contact us -->
+        <div class="contact-section" id="contact-section">
+            <h2 class="glitch" data-text="CONTACT US">CONTACT US</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <div class="input-focus-effect"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <div class="input-focus-effect"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                            <div class="input-focus-effect"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Location</h3>
+                        <p>Tech Innovation Hub</p>
+                        <p>123 Future Avenue</p>
+                        <p>Silicon Valley, CA 94025</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Connect</h3>
+                        <p>contact@innovate.tech</p> <br>
+                        <p>+91 8349283601</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="team-grid" id="team-grid">
-        <div class="team-member">
-          <div class="member-image"></div>
-          <h3>Faaris</h3>
-          <p>Chief Innovation Officer</p>
-        </div>
-        <div class="team-member">
-          <div class="member-image"></div>
-          <h3>Gaurang</h3>
-          <p>Lead Engineer</p>
-        </div>
-        <div class="team-member">
-          <div class="member-image"></div>
-          <h3>Chetan</h3>
-          <p>Design Director</p>
-        </div>
-        <div class="team-member">
-          <div class="member-image"></div>
-          <h3>Ketan</h3>
-          <p>Design Director</p>
-        </div>
-        <div class="team-member">
-          <div class="member-image"></div>
-          <h3>Anish</h3>
-          <p>Design Director</p>
-        </div>
-      </div>
-      <div class="contact-section" id="contact-section">
-        <h2 class="glitch" data-text="CONTACT US">CONTACT US</h2>
-        <div class="contact-grid">
-          <div class="contact-form">
-            <form>
-              <div class="form-group">
-                <input type="text" placeholder="Your Name" required>
-                <div class="input-focus-effect"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" placeholder="Your Email" required>
-                <div class="input-focus-effect"></div>
-              </div>
-              <div class="form-group">
-                <textarea placeholder="Your Message" required></textarea>
-                <div class="input-focus-effect"></div>
-              </div>
-              <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-          </div>
-          <div class="contact-info">
-            <div class="info-card">
-              <h3>Location</h3>
-              <p>Tech Innovation Hub</p>
-              <p>123 Future Avenue</p>
-              <p>Silicon Valley, CA 94025</p>
-            </div>
-            <div class="info-card">
-              <h3>Connect</h3>
-              <p>contact@innovate.tech</p> <br>
-              <p>+91 8349283601</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>
+    <!-- Footer Section -->
+    <footer>
         <div class="row">
             <div class="col">
                 <img src="nav bar images/TMN-removebg-preview1.png" class="logo2" alt="Logo">
                 <br><br>
-                <p>The leading platform for tracking and ranking e-sports teams worldwide.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et adipisci mollitia labore debitis omnis
+                    neque quaerat eaque? Maxime perspiciatis, numquam non dolor, amet dignissimos alias aliquam
+                    molestiae repellat deleniti qui?</p>
             </div>
             <div class="col">
                 <h3>ABOUT</h3>
@@ -176,12 +276,12 @@
                 <br>
                 <br>
                 <br>
-                <h3>COMPANY</h3>   
+                <h3>COMPANY</h3>
                 <p>Teams</p>
                 <p>News</p>
             </div>
             <div class="col">
-                <h3>TERMS AND POLICIES</h3>       
+                <h3>TERMS AND POLICIES</h3>
                 <p>Privacy</p>
                 <p>Terms & Conditions</p>
                 <br>
@@ -211,10 +311,10 @@
         <div class="box69">
             <div class="copyright">
                 The MVP's Network © 2025 - All Rights Reserved
-            </div> 
-        </div>     
+            </div>
+        </div>
     </footer>
-</div>
     <script src="script.js"></script>
 </body>
+
 </html>
