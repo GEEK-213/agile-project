@@ -94,16 +94,94 @@
     </div>
 </nav>
 <br><br><br>
-  <!--Shop Section-->    
-  <div class="shop">
+<br><br>
+<!--Shop Section-->
+<div class="shop">
 
+    <!--Filter and Featured Products Button-->
     <!--Filter and Featured Products Button-->
     <div class="container">
         <div class="container1">
-            <button id="filter">FILTER</button>
+            <button id="filter"><i class="fas fa-filter"></i> FILTER</button>
+
+            <!-- Filter Dropdown -->
+            <div class="filter-dropdown" id="filterDropdown">
+                <div class="filter-header">
+                    <h3>Filter Products</h3>
+                    <span class="filter-close">&times;</span>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <div class="filter-group-title">Categories</div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="category-jersey" class="filter-checkbox"
+                                data-category="Jersey">
+                            <label for="category-jersey" class="filter-label">Jerseys</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="category-hoodie" class="filter-checkbox"
+                                data-category="Hoodie">
+                            <label for="category-hoodie" class="filter-label">Hoodies</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="category-accessory" class="filter-checkbox"
+                                data-category="Accessory">
+                            <label for="category-accessory" class="filter-label">Accessories & Chairs</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="category-gear" class="filter-checkbox" data-category="Gear">
+                            <label for="category-gear" class="filter-label">Gaming Gear
+                                (Mouse/Keyboard/Headphones)</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-group-title">Price Range</div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="price-low" class="filter-checkbox" data-price="under50">
+                            <label for="price-low">Under $200</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="price-mid" class="filter-checkbox" data-price="50to100">
+                            <label for="price-mid">$200 - $300</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="price-high" class="filter-checkbox" data-price="100to200">
+                            <label for="price-high">Above $300</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-actions">
+                        <button class="filter-clear">Clear All</button>
+                        <button class="filter-apply">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container2">
-            <button id="featured">ADD TO CART</button>
+            <button id="featured" class="cart-btn"><i class="fas fa-shopping-cart"></i> VIEW CART <span
+                    class="cart-count">0</span></button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items">
+
+                <div class="empty-cart-message">Your cart is empty</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn">CHECKOUT <i class="fas fa-arrow-right"></i></button>
+            </div>
         </div>
     </div>
 
@@ -111,6 +189,11 @@
     <div class="Name">
         <h2>SHOP</h2>
         <P>TMNs official Store Page</P>
+    </div>
+
+    <!-- Filter Results Header -->
+    <div class="filter-results-header">
+        <h3>All Products</h3>
     </div>
 
     <!--Product container-->
@@ -252,7 +335,7 @@
                 </div>
             </div>
 
-          </div>
+        </div>
         <div class="productcontainer2">
             <div class="product1">
                 <div class="product-image">
@@ -390,12 +473,11 @@
                 </div>
             </div>
 
-          </div>
+        </div>
         <div class="productcontainer3">
             <div class="product1">
                 <div class="product-image">
-                    <img src="https://m.media-amazon.com/images/I/61szIgAs27L.jpg"
-                        alt="TMN Pro Jersey 2025">
+                    <img src="https://m.media-amazon.com/images/I/61szIgAs27L.jpg" alt="TMN Pro Jersey 2025">
                     <div class="product-overlay">
                         <button class="add-to-cart-btn">
                             <i class="fas fa-shopping-cart"></i>
@@ -528,11 +610,10 @@
                 </div>
             </div>
 
-          </div>
+        </div>
     </div>
 
 </div>
-
   <!-- Footer Section -->
     <footer>
         <div class="row">
@@ -586,5 +667,6 @@
             </div> 
         </div>     
     </footer>
+    <script src="shop.js"></script>
 </body>
 </html>
